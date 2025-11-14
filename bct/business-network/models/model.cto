@@ -1,0 +1,17 @@
+namespace org.example.business
+
+participant Person identified by personId {
+  o String personId
+  o String name
+}
+
+asset Product identified by productId {
+  o String productId
+  o String owner
+  o Double price
+}
+
+transaction TransferProduct {
+  --> Person newOwner
+  --> Product product
+}
