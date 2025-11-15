@@ -1,7 +1,0 @@
-rule AllowAll {
-  description: "Allow anyone to read/write everything"
-  participant: "ANY"
-  operation: ALL
-  resource: "org.example.business.*"
-  action: ALLOW
-}
